@@ -11,19 +11,6 @@
     "backgroundColor": "#f1f1f1",
     "enablePullDownRefresh":true
   },
-    "tabBar": {
-      "borderStyle":"white",
-      "backgroundColor": "#fa6739",
-      "color": "#fff",
-      "selectedColor": "#000000",
-      "list": [{
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      }, {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      }]
-  },
    "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000

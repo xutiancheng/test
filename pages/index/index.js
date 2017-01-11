@@ -2,19 +2,28 @@
 //获取应用实例
 var app = getApp()
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+data: {
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    listData:[]
   },
   onLoad: function () {
     console.log('onLoad')
     var that = this
+    wx.request({
+      url: 'http://172.16.90.39/index/getChoiceProject.html', //仅为示例，并非真实的接口地址
+      header: {
+          'content-type': 'application/json'
+      },
+      success: function(res) {
+        that.setData({
+        'listData':res.data.choiceProjectList
+      })
+      }
+    })
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据
