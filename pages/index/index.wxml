@@ -3,20 +3,19 @@
  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      <image src="{{item}}" class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
 <view class="item-list">
   <view wx:for="{{listData}}" hover='true' class="list-item">
-   <navigator url="../logs/logs" >
+   <navigator url="../detail/itemDetail?projectId={{item.id}}" >
     <view>标题：{{item.projectTypeName}}</view>
     <view>金额：{{item.account}}</view>
     <view>年化收益：{{item.apr}}</view>
     <view>起投金额：{{item.lowestAccount}}</view> 
   </navigator>
   </view>
-
 </view>
 <include src="../common/footer.wxml"/>
 </view>

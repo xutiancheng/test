@@ -1,0 +1,4 @@
+<view class="container">
+预期年化收益：
+{{itemDetail.project.apr}}
+</view>
