@@ -1,0 +1,5 @@
+/* pages/itemList/index.wxss */
+@import "../common/itemList.wxss";
+.type-choose {
+    background: #fff;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="item-type">
+        <view wx:for="{{typeData}}" hover='true' hover-class="type-choose" data-id="{{item.id}}" bindtap="changeType">
+            {{item.typeName}}
+        </view>
+    </view>
+    <view class="item">
+      <view wx:for="{{listData}}" hover='true' class="list-item">
+        <import src="../common/template.wxml"/>
+        <template is="msgItem" data="{{...item}}"/>
+      </view>
+    </view>
+</view>
