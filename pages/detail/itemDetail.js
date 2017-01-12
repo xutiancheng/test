@@ -21,5 +21,9 @@ Page({
       })
       }
     })
+  },
+  onPullDownRefresh: function(){
+    console.log(1);
+    wx.stopPullDownRefresh()
   }
 })

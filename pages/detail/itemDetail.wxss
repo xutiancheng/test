@@ -1,1 +1,13 @@
 /* pages/detail/itemDetail.wxss */
+.detail-header{
+    display: flex;
+    flex-flow:row nowrap;
+    position: relative;
+}
+.detail-header-title{
+    position: absolute;
+    background-color: #000;
+    width:100%;
+    top: 80px;
+    left: 0;
+}
