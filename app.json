@@ -11,6 +11,16 @@
     "backgroundColor": "#f1f1f1",
     "enablePullDownRefresh":true
   },
+    "tabBar": {
+    "backgroundColor":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "项目列表"
+    }]
+  },
    "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000

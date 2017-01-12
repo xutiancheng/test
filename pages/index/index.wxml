@@ -7,14 +7,28 @@
     </swiper-item>
   </block>
 </swiper>
-<view class="item-list">
+<view class="item">
   <view wx:for="{{listData}}" hover='true' class="list-item">
    <navigator url="../detail/itemDetail?projectId={{item.id}}" >
-    <view>标题：{{item.projectTypeName}}</view>
-    <view>金额：{{item.account}}</view>
-    <view>年化收益：{{item.apr}}</view>
-    <view>起投金额：{{item.lowestAccount}}</view> 
-  </navigator>
+    <view class="title">
+    <view class="title-detail">{{item.projectTypeName}}</view>
+    <view class="money">金额 {{item.account}}元</view>
+    </view>
+    <view class="item-detail">
+    <view class="apr">
+    <view class="text-number">{{item.apr}}%</view>
+    <view class="text-info">年化收益</view></view>
+    <view class="time">
+     <view class="text-number" wx:if="{{item.timeType ==0}}"> {{item.timeLimit}}个月 </view>
+     <view class="text-number" wx:else> {{item.timeLimit}}天 </view>
+     <view class="text-info">产品期限</view>
+    </view>
+    <view class="low-money">
+    <view class="text-number"> {{item.lowestAccount}}元</view>
+    <view class="text-info">起投金额</view>
+    </view> 
+    </view>
+   </navigator>
   </view>
 </view>
 <include src="../common/footer.wxml"/>
