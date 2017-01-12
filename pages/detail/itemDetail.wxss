@@ -5,6 +5,7 @@
     position: relative;
     height: 280rpx;
     border-bottom:solid 2px #f0f0f0;
+    background-color: #fff;
 }
 .detail-header-title{
     position: absolute;
@@ -20,9 +21,36 @@
     font-size: 96rpx;
     width:100%;
     text-align: center;
-    padding: 109rpx 0 0 0;
+    padding: 92rpx 0 0 0;
     color: #d0404b;
 }
 .detail-header-rate span{
     font-size: 60rpx;
+}
+.detail-header-tab{
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+}
+.detail-header-tab li{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    color: #666;
+}
+.detail-header-tab li:after{
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 2rpx;
+    height: 58rpx;
+    font-size: 0;
+    top:16rpx;
+    right: 0;
+    background-color: #f1f1f1;
+}
+.detail-header-tab li.last:after{
+    display: none;
 }

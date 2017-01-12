@@ -22,6 +22,9 @@ Page({
       }
     })
   },
+  tapName: function(event) {
+    console.log(event);
+  },
   onPullDownRefresh: function(){
     console.log(1);
     wx.stopPullDownRefresh()

@@ -1,4 +1,11 @@
 <view class="detail-header">
-    <div  class="detail-header-title">预期年化</div>
-    <div  class="detail-header-rate">{{itemDetail.project.apr}}<span>%</span></div>
+    <div class="detail-header-title">预期年化</div>
+    <div class="detail-header-rate">{{itemDetail.project.apr}}<span>%</span></div>
+</view>
+<view class="container" bindtap="tapName">
+    <ul class="detail-header-tab">
+        <li>{{itemDetail.project.lowestAccount}}元起投</li>
+        <li>{{itemDetail.project.timeLimit}}个月</li>
+        <li class="last" >{{["等额本息", "一次性还款", "每月还息到期还本", "等额本金", "每季还息到期还本"][itemDetail.project.repayStyle-1]}}</li>
+    </ul>
 </view>
