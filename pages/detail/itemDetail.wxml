@@ -1,6 +1,4 @@
-<view class="container">
-    <view class="detail-header">
-        <view  class="detail-header-title">预期年化</view>
-        <view  class="detail-header-rate">{{itemDetail.project.apr}}</view>
-    </view>
+<view class="detail-header">
+    <div  class="detail-header-title">预期年化</div>
+    <div  class="detail-header-rate">{{itemDetail.project.apr}}<span>%</span></div>
 </view>

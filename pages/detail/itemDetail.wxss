@@ -3,11 +3,26 @@
     display: flex;
     flex-flow:row nowrap;
     position: relative;
+    height: 280rpx;
+    border-bottom:solid 2px #f0f0f0;
 }
 .detail-header-title{
     position: absolute;
-    background-color: #000;
     width:100%;
-    top: 80px;
+    font-size:30rpx;
+    padding:0 0 0 48rpx;
+    top:0;
     left: 0;
+    color: #6d6d6d;
+    line-height: 74rpx;
+}
+.detail-header-rate{
+    font-size: 96rpx;
+    width:100%;
+    text-align: center;
+    padding: 109rpx 0 0 0;
+    color: #d0404b;
+}
+.detail-header-rate span{
+    font-size: 60rpx;
 }

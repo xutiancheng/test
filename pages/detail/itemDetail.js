@@ -8,7 +8,7 @@ Page({
     console.log(options.projectId)
     var that = this
       wx.request({
-      url: 'http://172.16.90.39/project/detail.html', //仅为示例，并非真实的接口地址
+      url: 'http://172.16.90.30:8080/project/detail.html', //仅为示例，并非真实的接口地址
       data:{
         projectId:options.projectId
       },
