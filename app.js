@@ -26,5 +26,8 @@ App({
   },
   globalData:{
     userInfo:null
+  },
+  globalWebUrl:{
+    host:'http://172.16.90.30:8080'
   }
 })

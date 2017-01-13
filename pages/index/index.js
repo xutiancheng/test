@@ -14,7 +14,7 @@ data: {
     console.log('onLoad')
     var that = this
     wx.request({
-      url: 'http://172.16.90.30:8080/index/getChoiceProject.html', //仅为示例，并非真实的接口地址
+      url: app.globalWebUrl.host+'/index/getChoiceProject.html', //仅为示例，并非真实的接口地址
       header: {
           'content-type': 'application/json'
       },
