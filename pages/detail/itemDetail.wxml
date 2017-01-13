@@ -9,3 +9,10 @@
         <li class="last" >{{["等额本息", "一次性还款", "每月还息到期还本", "等额本金", "每季还息到期还本"][itemDetail.project.repayStyle-1]}}</li>
     </ul>
 </view>
+<view class="detail-speed">
+    <progress percent="20" show-info />
+    <ul>
+        <li>融资金额<span>{{itemDetail.project.account}}</span>元</li>
+        <li>完成金额<span>{{itemDetail.project.accountYes}}</span>元</li>
+    </ul>
+</view>

@@ -37,7 +37,7 @@
     text-align: center;
     position: relative;
     line-height: 88rpx;
-    font-size: 30rpx;
+    font-size: 32rpx;
     color: #666;
 }
 .detail-header-tab li:after{
@@ -53,4 +53,21 @@
 }
 .detail-header-tab li.last:after{
     display: none;
+}
+.detail-speed{
+    color: #666;
+    margin: 22rpx 0 0 0;
+    height: 212rpx;
+    background-color: #fff;
+    padding: 50rpx 40rpx 0;  
+}
+.detail-speed ul{
+    display: flex;
+    justify-content:space-around; 
+}
+.detail-speed ul li{
+    width: 50%;
+    text-align: left;
+    line-height: 96rpx;
+    font-size: 32rpx;   
 }
