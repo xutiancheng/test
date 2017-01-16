@@ -12,6 +12,7 @@
     width:100%;
     font-size:30rpx;
     padding:0 0 0 48rpx;
+    box-sizing: border-box;
     top:0;
     left: 0;
     color: #6d6d6d;
