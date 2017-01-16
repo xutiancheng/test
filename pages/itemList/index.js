@@ -17,7 +17,7 @@ data: {
       wx.getSystemInfo({
         success: function(res) {
           that.setData({
-          'windowHeight':res.windowHeight-34
+          'windowHeight':res.windowHeight
           })
         }
       })

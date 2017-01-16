@@ -22,7 +22,7 @@ page{
 .item-type view{
     margin: 10rpx 10rpx;
     font-size: 30rpx;
-    padding: 0 6rpx;
+    padding: 2rpx 6rpx;
     border: 1rpx solid #f95b29;
     color: #fff;
     background: #f95b29;
