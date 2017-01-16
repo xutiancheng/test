@@ -24,4 +24,6 @@
     </ul>
 </view>
 <view class="detail-sub">立即投资</view>
-<view class="countdown">结束时间:{{itemDetail.project.apr}}</view>
+<block wx:if="{{(itemDetail.project.saleEndTime - itemDetail.systemTime) > 0}}">
+    <view class="countdown">结束时间:{{showTime}}</view>
+</block>
