@@ -17,7 +17,7 @@ data: {
       wx.getSystemInfo({
         success: function(res) {
           that.setData({
-          'windowHeight':res.windowHeight-64
+          'windowHeight':res.windowHeight-34
           })
         }
       })
@@ -76,8 +76,6 @@ data: {
           }
         })       
         if(funType=='add'){
-               console.log(res.data.page.rows)
-          console.log(that.data.listData)
           that.setData({
           'typeData':that.data.typeData,
           'listData':that.data.listData.concat(res.data.page.rows)
