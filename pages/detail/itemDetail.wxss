@@ -71,3 +71,26 @@
     line-height: 96rpx;
     font-size: 32rpx;   
 }
+.detail-info{
+    margin: 22rpx 0 0 0;
+    overflow: hidden;
+    border-bottom:solid 2px #f0f0f0;
+    background-color: #fff;   
+}
+.detail-info ul{
+    display: block;
+    overflow: hidden;
+    margin:0 0 0 34rpx;
+    color: #666;
+}
+.detail-info ul li{
+    display: block;
+    box-sizing: border-box;
+    border-bottom:solid 1px #c6c6c6;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    font-weight: 200;
+}
+.detail-info ul li.last{
+    border:none;
+}
