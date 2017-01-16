@@ -81,7 +81,7 @@
     display: block;
     overflow: hidden;
     margin:0 0 0 34rpx;
-    color: #666;
+    color: #141414;
 }
 .detail-info ul li{
     display: block;
@@ -90,7 +90,29 @@
     line-height: 100rpx;
     font-size: 32rpx;
     font-weight: 200;
+    padding:0 64rpx 0 0;
+}
+.detail-info ul li span{
+    float: right;
+    font-weight: bold;
 }
 .detail-info ul li.last{
     border:none;
+}
+.detail-sub{
+    margin: 20rpx 35rpx 0;
+    line-height: 110rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d44642;
+    color: #fefefe;
+    font-size:42rpx;
+}
+.countdown{
+    font-size: 32rpx;
+    line-height: 74rpx;
+    text-align: center;
+    font-weight: 300;
+    color: #686868;
 }

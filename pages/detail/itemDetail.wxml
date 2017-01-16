@@ -18,8 +18,10 @@
 </view>
 <view class="detail-info">
     <ul>
-        <li>风控措施</li>
-        <li>投标记录</li>
-        <li class="last">借款详情</li>
+        <li>风控措施<span>></span></li>
+        <li>投标记录<span>></span></li>
+        <li class="last">借款详情<span>></span></li>
     </ul>
 </view>
+<view class="detail-sub">立即投资</view>
+<view class="countdown">结束时间:{{itemDetail.project.apr}}</view>
