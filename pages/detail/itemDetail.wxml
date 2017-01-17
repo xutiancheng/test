@@ -20,7 +20,7 @@
     <ul>
         <li>风控措施<span>></span></li>
         <li>投标记录<span>></span></li>
-        <li class="last">借款详情<span>></span></li>
+        <li class="last"><navigator url="../detailNews/info?projectId={{id}}&type={{itemDetail.project.borrowFlag}}" ><block wx:if="{{itemDetail.project.borrowFlag == '0'}}">产品详情</block><block wx:else="{{itemDetail.project.borrowFlag == '1'}}">借款详情</block><span>></span></navigator></li>
     </ul>
 </view>
 <view class="detail-sub">立即投资</view>
