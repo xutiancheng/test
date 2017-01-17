@@ -4,10 +4,12 @@ Page({
   data:{
     itemDetail:[],
     percent:null,
-    showTime:''
+    showTime:'',
+    id:''
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    this.setData({id:options.projectId});
     var that = this
       wx.request({
       url: app.globalWebUrl.host+'/project/detail.html', //仅为示例，并非真实的接口地址

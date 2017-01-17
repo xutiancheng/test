@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/detail/itemDetail",
-    "pages/itemList/index"
+    "pages/itemList/index",
+    "pages/detailNews/info"
   ],
   "window":{
     "backgroundTextStyle":"light",
