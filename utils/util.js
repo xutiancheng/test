@@ -16,6 +16,14 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+
+// 手机号码校验
+function isMobile(value) {
+		var length = value.length;
+		return ! (length == 11 && /^((13|18|15)\d{9})|(145|147|170|171|173|175|176|177|178)\d{8}$/.test(value));
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  isMobile:isMobile
 }

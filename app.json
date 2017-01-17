@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/itemDetail",
     "pages/itemList/index",
-    "pages/detailNews/info"
+    "pages/detailNews/info",
+    "pages/bindAccount/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,6 +21,10 @@
     }, {
       "pagePath": "pages/itemList/index",
       "text": "项目列表"
+    }
+    , {
+      "pagePath": "pages/bindAccount/index",
+      "text": "账号绑定"
     }]
   },
    "networkTimeout": {
