@@ -9,8 +9,7 @@
     "navigationBarBackgroundColor": "#fa6739",
     "navigationBarTitleText": "融都互金",
     "navigationBarTextStyle":"#fff",
-    "backgroundColor": "#f1f1f1",
-    "enablePullDownRefresh":true
+    "backgroundColor": "#f1f1f1"
   },
     "tabBar": {
     "backgroundColor":"#fff",

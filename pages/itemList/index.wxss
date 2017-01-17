@@ -15,6 +15,7 @@ page{
     background: #f1f1f1;
     z-index: 999;
     height: 68rpx;
+    overflow-y: auto;
 }
 .item {
  
