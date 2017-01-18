@@ -4,6 +4,7 @@ page{
     line-height: 36rpx;
     font-size: 24rpx;
     color: #666;
+    background-color: #fff;
 }
 .title{
     font-size: 28rpx;
